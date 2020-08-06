@@ -18,6 +18,10 @@ fun main(args: Array<String>) {
     
     // print the result of the game
     println("Heads: ${countHeads}, Tails: ${countTails}")
+    if( countHeads >= countTails )
+        println("You won!")
+    else
+        println("You lost!")
 }
 
 
