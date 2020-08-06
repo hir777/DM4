@@ -5,7 +5,14 @@ fun main(args: Array<String>) {
     var countHeads:Int = 0
     var countTails:Int = 0
     var result:String
+    val userName:String?
     
+    // ask user about his or her name
+    print("Who are you?\n> ")
+    userName = readLine()
+    println("\nHello, ${userName}!")
+    
+    // toss coin
     println("Tossing a coin")
     for( i in 0 until times ){
         result = CoinToss()
